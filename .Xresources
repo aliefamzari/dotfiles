@@ -1,0 +1,57 @@
+! HighDpi for 4k screen
+Xft.dpi: 220 
+
+! These might also be useful depending on your monitor and personal preference:
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: none
+
+! Urxvt settings
+! URxvt.font: xft:mono:size=8
+!URxvt.font: xft:Roboto Mono light for Powerline:size=8
+!xterm.faceName: xft:Roboto Mono light for Powerline:size=8
+URxvt.font: xft:RobotoMono Nerd Font Mono:style=Regular:pixelsize=24
+! xterm.faceName: xft:RobotoMono Nerd Font Mon:style=Regular:size=8
+
+! URxvt.font: xft:monaco:size=8
+!URxvt.letterSpace: -1
+!URxvt*background: black
+!URxvt*foreground: white
+
+! Transparency-composite (Picom/Compton)
+URxvt*depth: 32
+URxvt*background: [35]#000000
+URxvt*foreground: [100]#ffffff
+
+! Transparency (fake)
+!URxvt.transparent: true
+!URxvt.shading: 30
+
+! Frame & Window
+URxvt.scrollBar: false
+URxvt.internalBorder: 15
+URxvt.fading: 20
+
+! Cursor blinking
+URxvt.cursorBlink: 1
+
+! Extension
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,resize-font
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+! Keybindings for font-resize
+URxvt.keysym.C-minus:     resize-font:reset
+! URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:bigger
+URxvt.keysym.C-question:  resize-font:show
+
+! Disable Keycap Picture Instert Mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false
