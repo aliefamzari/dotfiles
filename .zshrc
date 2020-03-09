@@ -174,7 +174,7 @@ alias ls='lsd'
 alias l='ls -alh'
 alias ll='ls -lh'
 alias lrt='ls -lrth'
-alias dotgit='/usr/bin/git --git-dir=/home/alif/dotfiles --work-tree=/home/alif'
+alias dotfiles='/usr/bin/git --git-dir=/home/alif/dotfiles --work-tree=/home/alif'
 
 # Color for Man Pages
 export LESS_TERMCAP_mb=$'\e[1;32m'
